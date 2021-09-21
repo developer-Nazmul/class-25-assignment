@@ -1,0 +1,272 @@
+/* Start Css Code  */
+body a,h1,h2,h3,h5,h6,p,span,button {
+    font-family: 'Spartan', sans-serif;
+}
+/* Header Part */
+header {
+    background-color: #f6f9fc;
+}
+.my_header_text {}
+.my_header_text span {
+    display: inline-block;
+    color: #688aef;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.my_header_text h2 {
+    font-weight: 700;
+    margin-bottom: 14px;
+    padding-bottom: 16px;
+    position: relative;
+}
+.my_header_text h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 536px;
+    height: 4%;
+    width: 4.5%;
+    background-color: #688aef;
+}
+.my_header_text p {
+    color: #aaa8a7;
+    font-size: 13px;
+}
+.myproduct_txt {
+    background-color: #fdfdfd;
+    padding: 40px;
+    transition: .6s;
+}
+.my_p {
+    padding-bottom: 40px;
+    padding-top: 5px;
+    opacity: 1;
+    transition: .6s;
+    opacity: 0;
+    visibility: hidden;
+}
+.myproduct_txt:hover .my_p {
+    color: white;
+    visibility: visible;
+    opacity: 1;
+}
+.my-product_head {
+    position: relative;
+}
+.my-product_head h5 {
+    margin-bottom: 28px;
+}
+.my-product_head h1 {
+    font-weight: 600;
+    font-size: 40px;
+    
+    position: relative;
+}
+.my-product_head h1::after {
+    position: absolute;
+    content: "";
+    bottom: -77px;
+    left: 45px;
+    height: 0.2%;
+    width: 65%;
+    background-color: #ededed;
+}
+.my-product_bottom p {
+    color: #aaa8a7;
+    transition: .6s;
+}
+
+.my-product_bottom button {
+    padding: 13px 25px;
+    border: none;
+    font-size: 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    margin-top: 8px;
+    color: white;
+    background: #0d6efd;
+    transition: .6s;
+    position: relative;
+    z-index: 1;
+}
+.myproduct_txt:hover {
+    background-color: #0d6efd;
+    color: white;
+}
+.myproduct_txt:hover .my-product_bottom p {
+    color: #fff;
+}
+.myproduct_txt:hover button {
+    color: #0d6efd;
+    background-color: #fff;
+}
+.my-product_bottom button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-radius: 50px;
+    transition: .6s;
+    background-color: #0d6efd;
+    color: #fff;
+    z-index: -1;
+    font-weight: 600;
+}
+.my-product_bottom button:hover {
+    color: white;
+}
+.my-product_bottom button:hover::after {
+    width: 100%;
+ 
+}
+ 
+/* Banner Part  */
+
+.banner_part {
+    background: url("https://i.ibb.co/tQnmDHx/free-bg.jpg");
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+    height: 500px;
+    margin-top: 80px;
+    z-index: 1;
+}
+.banner_part::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(81, 120, 238,0.7);
+    z-index: -1;
+}
+.mybanner_text {
+    
+}
+.mybanner_text span {
+    padding-top: 100px;
+    display: inline-block;
+    font-size: 14px;
+    padding-bottom: 15px;
+    font-weight: 500;
+}
+.mybanner_text h2 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    padding-bottom: 16px;
+    position: relative;
+
+}
+.mybanner_text h2::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 532px;
+    width: 5%;
+    height: 2%;
+    background-color: #fff;
+}
+.mybanner_text p {
+    font-size: 13px;
+    font-weight: 500;
+    padding-bottom: 20px;
+
+}
+.bttn {
+    color: #0d6efd;
+    background: white;
+    padding: 13px 25px;
+    position: relative;
+    z-index: 1;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: .5s;
+}
+ .bttn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #0d6efd;
+    z-index: -1;
+    transition: .6s;
+    border-radius: 50px;
+    
+}
+.bttn:hover::after {
+    width: 100%;
+    border: 1px solid #fff;
+    
+}
+.bttn:hover {
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Fotter Part  */
+
+footer {
+    background-color: #f8f9fa;
+}
+.news_letter {
+    background: #3763eb;
+    padding: 40px 40px;
+    margin-top: 65px;
+}
+.newsleter-head h4 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+.newsleter-head p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.my_email {
+    width: 290px;
+    border-radius: 50px;
+    height: 35px;
+}
+.newsleter-bottom button {
+    background-color: #3763eb;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    padding: 8px 20px;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 600;
+    margin-left: 25px;
+}
+.bussness {
+    background-color: #fff;
+    padding: 28px 40px;
+    box-shadow: 1px -1px 12px rgb(12 12 12 / 15%);
+    width: 83%;
+    margin-left: 10px;
+    margin-top: 65px;
+}
+.bussness p {
+    font-weight: 600;
+    font-size: 19px;
+    padding-bottom: 50px;
+}
+.bussness button {
+    background: #3763eb;
+    color: #fff;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 8px 16px;
+    line-height: 20px;
+    border-radius: 50px;
+    border: none;
+    transition: .5s;
+}
+.bussness button:hover {
+    background-color: #1349e9;
+}
